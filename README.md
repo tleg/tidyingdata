@@ -14,6 +14,7 @@ Here are the data for the project:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 You should create one R script called run_analysis.R that does the following. 
+
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 3. Uses descriptive activity names to name the activities in the data set
@@ -25,22 +26,22 @@ You should create one R script called run_analysis.R that does the following.
 Files of note in the data set:
 
 
-x_train.txt | x_test.txt - provides a table of data N rows by ~561 columns with various measurements.
-features.txt - provides column names for the 561 measurements in each test file.
-y_train.txt | y_test.txt - a table of data N rows by 1 column with an integer representing the activity taken (e.g. walking up, walking down)  
-activity_labels.txt - labels the activities - this corresponds to the y_test and y_train files and maps the numbers in those files to an activity.
-subject_train.txt | subject_test.txt - a table of data N rows by 1 column with the subject #.
+* x_train.txt | x_test.txt - provides a table of data N rows by ~561 columns with various measurements.
+* features.txt - provides column names for the 561 measurements in each test file.
+* y_train.txt | y_test.txt - a table of data N rows by 1 column with an integer representing the activity taken (e.g. walking up, walking down)  
+* activity_labels.txt - labels the activities - this corresponds to the y_test and y_train files and maps the numbers in those files to an activity.
+* subject_train.txt | subject_test.txt - a table of data N rows by 1 column with the subject #.
 
 ---
 
 What I think needs to be done:
 
-combines x_train.txt, y_train.txt, features.txt, subject_train.txt into a data frame with features.txt providing the header rows.
-combines x_test.txt, y_test.txt, features.txt and subject_test.txt into a data frame with features.txt providing the header rows.
-merge df_train and df_test into a single data frame, df.
-selects out the mean() and std() columns.
-replaces the activity #s from y_* with the corresponding character-based factor from activity_labels.txt
-ensure that all columns are intelligently named.
+1. combine x_train.txt, y_train.txt, features.txt, subject_train.txt into a data frame with features.txt providing the header rows.
+2. combine x_test.txt, y_test.txt, features.txt and subject_test.txt into a data frame with features.txt providing the header rows.
+3. merge df_train and df_test into a single data frame, df.
+4. selects out the mean() and std() columns into a new datafram df2.
+5. replaces the activity #s from y_* with the corresponding character-based factor from activity_labels.txt
+6. ensure that all columns are intelligently named.
  
 make sure we are tidy data (Each variable you measure should be in one column, Each different observation of that variable should be in a different row)
 
