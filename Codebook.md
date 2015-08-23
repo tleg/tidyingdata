@@ -61,4 +61,77 @@ The script run_analysis.R performs these basic funbctions:
 This completes the steps required to make the final tidy data set, *full_average*.
 
 ## Variables in the data set
+The following variables and values are in the final data set.
 
+Variable | Values | Comments
+--- | --- | ---
+subject | Integer 1 - 30 | An integer representing a subject in the test.  30 individuals were tested and each assigned a value 1 - 30.
+activity | Factor with six levels:<br>LAYING<br>SITTING<br>STANDING<br>WALKING<br>WALKING_DOWNSTAIRS<br>WALKING_UPSTAIRS | A human-readable description of one of the six activities subjects engaged in while observed.
+tBodyAcc.mean...X | numeric | average value of body impact on accelerometer in X axis
+tBodyAcc.mean...Y | numeric | average value of body impact on accelerometer in Y axis
+tBodyAcc.mean...Z | numeric | average value of body impact on accelerometer in Z axis
+tBodyAcc.std...X | numeric | standard deviation of body impact on accelerometer in X axis
+tBodyAcc.std...Y | numeric | standard deviation of body impact on accelerometer in Y axis
+tBodyAcc.std...Z | numeric | standard deviation of body impact on accelerometer in Z axis
+tGravityAcc.mean...X | numeric | average value of gravity impact on accelerometer in X axis
+tGravityAcc.mean...Y | numeric | average value of gravity impact on accelerometer in Y axis
+tGravityAcc.mean...Z | numeric | average value of gravity impact on accelerometer in Z axis
+tGravityAcc.std...X | numeric | standard deviation of gravity impact on accelerometer in X axis
+tGravityAcc.std...Y | numeric | standard deviation of gravity impact on accelerometer in X axis
+tGravityAcc.std...Z | numeric | standard deviation of gravity impact on accelerometer in X axis
+tBodyAccJerk.mean...X | numeric | average value of body impact on accelerometer Jerk in X axis
+tBodyAccJerk.mean...Y | numeric | average value of body impact on accelerometer Jerk in Y axis
+tBodyAccJerk.mean...Z | numeric | average value of body impact on accelerometer Jerk in Z axis
+tBodyAccJerk.std...X | numeric | standard deviation of body impact on accelerometer Jerk in X axis
+tBodyAccJerk.std...Y | numeric | standard deviation of body impact on accelerometer Jerk in Y axis
+tBodyAccJerk.std...Z | numeric | standard deviation of body impact on accelerometer Jerk in Z axis
+tBodyGyro.mean...X | numeric | average value of body impact on gyroscopic measurements in X axis
+tBodyGyro.mean...Y | numeric | average value of body impact on gyroscopic measurements in Y axis
+tBodyGyro.mean...Z | numeric | average value of body impact on gyroscopic measurements in Z axis
+tBodyGyro.std...X | numeric | standard deviation of body impact on gyroscopic measurements in X axis
+tBodyGyro.std...Y | numeric | standard deviation of body impact on gyroscopic measurements in Y axis
+tBodyGyro.std...Z | numeric | standard deviation of body impact on gyroscopic measurements in Z axis
+tBodyGyroJerk.mean...X | numeric | average value of body impact on gyroscopic Jerk in X axis
+tBodyGyroJerk.mean...Y | numeric | average value of body impact on gyroscopic Jerk in X axis
+tBodyGyroJerk.mean...Z | numeric | average value of body impact on gyroscopic Jerk in X axis
+tBodyGyroJerk.std...X | numeric | standard deviation of body impact on gyroscopic Jerk in X axis
+tBodyGyroJerk.std...Y | numeric | standard deviation of body impact on gyroscopic Jerk in X axis
+tBodyGyroJerk.std...Z | numeric | standard deviation of body impact on gyroscopic Jerk in X axis
+tBodyAccMag.mean.. | numeric | average value of magnitude of three dimensional signals of body impact on accelerometer calculated using the Euclidean norm.
+tBodyAccMag.std.. | numeric | standard deviation of magnitude of three dimensional signals of body impact on accelerometer calculated using the Euclidean norm.
+tGravityAccMag.mean.. | numeric | average value of magnitude of three dimensional signals of gravity impact on accelerometer calculated using the Euclidean norm.
+tGravityAccMag.std.. | numeric | standard deviation of magnitude of three dimensional signals of gravity impact on accelerometer calculated using the Euclidean norm.
+tBodyAccJerkMag.mean.. | numeric | average value of magnitude of three dimensional signals of body impact on accelerometer Jerk calculated using the Euclidean norm.
+tBodyAccJerkMag.std.. | numeric | standard deviation of magnitude of three dimensional signals of body impact on accelerometer Jerk calculated using the Euclidean norm.
+tBodyGyroMag.mean.. | numeric | average value of magnitude of three dimensional signals of body impact on gyroscope calculated using the Euclidean norm.
+tBodyGyroMag.std.. | numeric | standard deviation of magnitude of three dimensional signals of body impact on gyroscope calculated using the Euclidean norm.
+tBodyGyroJerkMag.mean.. | numeric | average value of magnitude of three dimensional signals of body impact on gyroscope Jerk calculated using the Euclidean norm.
+tBodyGyroJerkMag.std.. | numeric | standard deviation of magnitude of three dimensional signals of body impact on gyroscope Jerk calculated using the Euclidean norm.
+fBodyAcc.mean...X | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyAcc.mean...Y | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyAcc.mean...Z | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyAcc.std...X | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyAcc.std...Y | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyAcc.std...Z | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyAccJerk.mean...X | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyAccJerk.mean...Y | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyAccJerk.mean...Z | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyAccJerk.std...X | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyAccJerk.std...Y | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyAccJerk.std...Z | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyGyro.mean...X | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyGyro.mean...Y | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyGyro.mean...Z | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyGyro.std...X | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyGyro.std...Y | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyGyro.std...Z | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyAccMag.mean.. | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyAccMag.std.. | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyBodyAccJerkMag.mean.. | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyBodyAccJerkMag.std.. | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyBodyGyroMag.mean.. | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyBodyGyroMag.std.. | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyBodyGyroJerkMag.mean.. | numeric | Fast Fourier Transform of same value beginning with t above.
+fBodyBodyGyroJerkMag.std.. | numeric | Fast Fourier Transform of same value beginning with t above.
+
+For more details on the observations and how they're computed and what they mean, read *features_info.txt* in the data set ZIP.
